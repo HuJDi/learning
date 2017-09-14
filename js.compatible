@@ -1,0 +1,25 @@
+//获取scrollTop的值
+document.body.scrollTop||document.donumentElement.scrollTop
+//获取event对象
+var e=e||window.event
+//获取元素属性
+getComputedStyle(obj).attr
+obj.currentStyle.attr
+//阻止浏览器默认事件
+if(event.preventDefault){
+  event.preventDefault();
+ }else{
+  window.event.returnValue=false;
+ }
+ //添加事件监听器
+ obj.addEventListener(type,fn,useCapture)
+ obj.attachEvent(type,fn)
+ //删除事件监听器
+ obj.removeEventListener(type,fn,useCapture)
+ obj.detachEvent(type,fn)
+ //阻止冒泡事件
+ if(event.stopPropagation){
+  even.stopPropagation();
+ }else{
+  event.cancelBubble=true;
+ }
