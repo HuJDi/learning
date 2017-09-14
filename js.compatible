@@ -23,3 +23,5 @@ if(event.preventDefault){
  }else{
   event.cancelBubble=true;
  }
+获取键盘上按键对应的unicode编码
+event.keyCode||event.which
